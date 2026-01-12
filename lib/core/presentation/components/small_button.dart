@@ -43,7 +43,7 @@ class _SmallButtonState extends State<SmallButton> {
         height: 37,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: isPressed ? ColorStyles.gary4 : ColorStyles.primaryColor,
+          color: isPressed ? ColorStyles.gray4 : ColorStyles.primaryColor,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

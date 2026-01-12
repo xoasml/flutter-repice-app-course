@@ -43,7 +43,7 @@ class _MediumButtonState extends State<MediumButton> {
         height: 54,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: isPressed ? ColorStyles.gary4 : ColorStyles.primaryColor,
+          color: isPressed ? ColorStyles.gray4 : ColorStyles.primaryColor,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
