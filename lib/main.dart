@@ -4,6 +4,7 @@ import 'package:flutter_recipe_app_course/core/presentation/components/input_fie
 import 'package:flutter_recipe_app_course/core/presentation/components/medium_button.dart';
 import 'package:flutter_recipe_app_course/core/presentation/components/rating_button.dart';
 import 'package:flutter_recipe_app_course/core/presentation/components/tow_tab.dart';
+import 'package:flutter_recipe_app_course/core/presentation/dialogs/rating_dialog.dart';
 import 'package:flutter_recipe_app_course/ui/text_styles.dart';
 
 import 'core/presentation/components/filter_button.dart';
@@ -58,8 +59,26 @@ class MyHomePage extends StatelessWidget {
       ),
       body: ListView(
         children: [
+          ElevatedButton(
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (_) {
+                  return RatingDialog(
+                    title: 'Rate recipe',
+                    score: 3,
+                    actionName: 'Send',
+                    onChange: (score) {
+                      print(score);
+                    },
+                  );
+                },
+              );
+            },
+            child: const Text('Rating'),
+          ),
           TowTab(
-            labels: ['label 1', 'label 2'],
+            labels: const ['label 1', 'label 2'],
             selectedIndex: 1,
             onChange: (int index) {
               print('TowTab: $index');
