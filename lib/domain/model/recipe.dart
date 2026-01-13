@@ -1,4 +1,4 @@
-import 'package:flutter_recipe_app_course/domain/modal/recipe_ingredient.dart';
+import 'package:flutter_recipe_app_course/domain/model/recipe_ingredient.dart';
 
 class Recipe {
   final int id;
