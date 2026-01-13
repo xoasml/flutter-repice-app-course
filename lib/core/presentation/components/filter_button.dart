@@ -22,7 +22,7 @@ class FilterButton extends StatelessWidget {
           color: isSelected ? ColorStyles.white : ColorStyles.primary80,
         ),
       ),
-      side: BorderSide(color:ColorStyles.primaryColor),
+      side: const BorderSide(color:ColorStyles.primaryColor),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         )
