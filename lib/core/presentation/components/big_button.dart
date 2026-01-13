@@ -57,14 +57,14 @@ class _BigButtonState extends State<BigButton> {
                 ),
               ),
             ),
-            SizedBox(width: 11),
-            Icon(
+            const Icon(
               Icons.arrow_forward,
               size: 20,
               color: ColorStyles.white,
             ),
           ],
         ),
+
       ),
     );
   }
